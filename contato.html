@@ -37,6 +37,11 @@
     <main>
         <section id="contato" class="section">
             <div class="container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <h2>Entre em Contato</h2>
                 <p>Fale conosco para orçamentos ou para tirar suas dúvidas.</p>
 
@@ -46,8 +51,36 @@
                 </a>
             </div>
         </section>
+
+        <script>
+            const header = document.querySelector('header');
+            // Adiciona a classe 'transparent-header' logo no início
+            if (window.scrollY === 0) {
+                header.classList.add('transparent-header');
+            }
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { // Após rolar 50 pixels...
+                    header.classList.remove('transparent-header');
+                } else { // ...ou ao voltar para o topo
+                    header.classList.add('transparent-header');
+                }
+            });
+        </script>
+
     </main>
 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
         <div class="container">
             <p>&copy; 2025 AP Motobombas. Todos os direitos reservados.</p>
