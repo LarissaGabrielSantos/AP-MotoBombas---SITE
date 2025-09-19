@@ -27,42 +27,68 @@
     <main>
         <section class="section">
             <div class="container">
-                <h2>Trabalhe Conosco</h2>
-                <p>Faça parte da nossa equipe! Estamos sempre em busca de talentos para crescer conosco.</p>
+                <h2>Oportunidades em Aberto</h2>
+                <p>Faça parte da nossa equipe! Confira as vagas disponíveis abaixo.</p>
 
-                <div class="vaga">
-                    <h3>Técnico de Manutenção de Piscinas</h3>
-                    <p><strong>Localização:</strong> [Sua Cidade], [Seu Estado]</p>
-                    <p><strong>Tipo de Contrato:</strong> Tempo Integral</p>
+                <div class="acordeon-vagas">
+                    <div class="vaga-item">
+                        <div class="vaga-header">
+                            <h3>Técnico de Manutenção de Piscinas</h3>
+                            <span><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="vaga-detalhes">
+                            <p><strong>Localização:</strong> [Sua Cidade], [Seu Estado]</p>
+                            <p><strong>Tipo de Contrato:</strong> Tempo Integral</p>
+                            <h4>Descrição da Vaga:</h4>
+                            <p>Estamos procurando um Técnico de Manutenção de Piscinas dedicado e com experiência para se juntar à nossa equipe...</p>
+                            <h4>Responsabilidades:</h4>
+                            <ul>
+                                <li>Realizar diagnósticos e reparos em motobombas.</li>
+                                <li>Executar manutenções preventivas.</li>
+                                <li>Prestar um excelente atendimento ao cliente.</li>
+                            </ul>
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Experiência comprovada na área.</li>
+                                <li>Conhecimento em hidráulica e elétrica básica.</li>
+                                <li>Carteira de Habilitação (Categoria B).</li>
+                            </ul>
+                            <h4>Como se Candidatar:</h4>
+                             <a href="SEU_LINK_DO_FORMS_AQUI_VAGA_1" class="btn-forms" target="_blank">
+                                <i class="fas fa-file-alt"></i> Preencher Formulário
+                            </a>
+                        </div>
+                    </div>
 
-                    <h4>Descrição da Vaga:</h4>
-                    <p>
-                        Estamos procurando um Técnico de Manutenção de Piscinas dedicado e com experiência para se juntar à nossa equipe. O candidato ideal será responsável pela instalação, manutenção e reparo de equipamentos de piscinas, como motobombas, filtros e sistemas de aquecimento.
-                    </p>
+                    <div class="vaga-item">
+                        <div class="vaga-header">
+                            <h3>Assistente Administrativo</h3>
+                            <span><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="vaga-detalhes">
+                            <p><strong>Localização:</strong> [Sua Cidade], [Seu Estado]</p>
+                            <p><strong>Tipo de Contrato:</strong> Meio Período</p>
+                            <h4>Descrição da Vaga:</h4>
+                            <p>Buscamos um Assistente Administrativo para dar suporte em rotinas de escritório, atendimento e organização de agenda.</p>
+                            <h4>Responsabilidades:</h4>
+                            <ul>
+                                <li>Atendimento telefônico e via WhatsApp.</li>
+                                <li>Organização de notas fiscais e documentos.</li>
+                                <li>Agendamento de visitas técnicas.</li>
+                            </ul>
+                            <h4>Requisitos:</h4>
+                            <ul>
+                                <li>Ensino médio completo.</li>
+                                <li>Boa comunicação e organização.</li>
+                                <li>Conhecimento do Pacote Office.</li>
+                            </ul>
+                            <h4>Como se Candidatar:</h4>
+                             <a href="SEU_LINK_DO_FORMS_AQUI_VAGA_2" class="btn-forms" target="_blank">
+                                <i class="fas fa-file-alt"></i> Preencher Formulário
+                            </a>
+                        </div>
+                    </div>
 
-                    <h4>Responsabilidades:</h4>
-                    <ul>
-                        <li>Realizar diagnósticos e reparos em motobombas e outros equipamentos.</li>
-                        <li>Executar manutenções preventivas de acordo com o cronograma.</li>
-                        <li>Prestar um excelente atendimento ao cliente, explicando os problemas e soluções.</li>
-                        <li>Manter o local de trabalho limpo e organizado.</li>
-                    </ul>
-
-                    <h4>Requisitos:</h4>
-                    <ul>
-                        <li>Experiência comprovada como técnico de manutenção de piscinas.</li>
-                        <li>Conhecimento em hidráulica e elétrica básica.</li>
-                        <li>Carteira de Habilitação (Categoria B).</li>
-                        <li>Boa comunicação e habilidade para resolver problemas.</li>
-                    </ul>
-
-                    <h4>Como se Candidatar:</h4>
-                    <p>
-                        Interessado? Preencha nosso formulário de candidatura online:
-                    </p>
-                    <a href="SEU_LINK_DO_FORMS_AQUI" class="btn-forms" target="_blank">
-                        <i class="fas fa-file-alt"></i> Preencher Formulário
-                    </a>
                 </div>
             </div>
         </section>
@@ -70,13 +96,45 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 AP Motobombas. Todos os direitos reservados.</p>
+            <p>&copy; 2025 AP Motobombas. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const vagaHeaders = document.querySelectorAll('.vaga-header');
+
+            vagaHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Fecha todos os outros itens abertos para manter apenas um aberto por vez
+                    vagaHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                            otherHeader.classList.remove('active');
+                            otherHeader.nextElementSibling.style.maxHeight = null;
+                            otherHeader.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+                        }
+                    });
+
+                    // Abre ou fecha o item clicado
+                    const isActive = header.classList.toggle('active');
+                    const detalhes = header.nextElementSibling;
+                    const icone = header.querySelector('i');
+
+                    if (isActive) {
+                        detalhes.style.maxHeight = detalhes.scrollHeight + "px";
+                        icone.classList.replace('fa-plus', 'fa-minus');
+                    } else {
+                        detalhes.style.maxHeight = null;
+                        icone.classList.replace('fa-minus', 'fa-plus');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
