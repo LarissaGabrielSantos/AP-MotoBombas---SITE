@@ -1,0 +1,225 @@
+/* Reset Básico e Fontes */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* Header */
+header {
+    background: #3399FF; /* Azul claro principal */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #66B2FF; /* Tom mais claro de azul para hover */
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x600.png?text=Piscina+Limpa') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #4DA6FF; /* Botão em azul claro */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #3385FF; /* Botão escurece um pouco no hover */
+}
+
+/* Seções Gerais */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+/* Grid de Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .icon {
+    font-size: 3rem;
+    color: #3399FF; /* Ícones em azul claro */
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-peca {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Página "Trabalhe Conosco" */
+.vaga {
+    text-align: left;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.vaga h3 {
+    color: #3399FF; /* Título da vaga em azul claro */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.vaga h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #4DA6FF; /* Detalhe da borda em azul claro */
+    padding-left: 10px;
+}
+
+.vaga ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Botão Flutuante do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para o botão de Formulário */
+.btn-forms {
+    display: inline-flex;
+    align-items: center;
+    background: #FF6600; /* Laranja para destacar o botão do forms */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-forms:hover {
+    background: #E65C00; /* Laranja mais escuro no hover */
+}
+
+.btn-forms .fas {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}  
