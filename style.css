@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Autography';
+    src: url('./Assets/fonts/Autography.otf') format('opentype');
+    /* Se o seu arquivo for .ttf, use: src: url('fonts/Autography.ttf') format('truetype'); */
+}
+
 /* Reset Básico e Fontes */
 body, h1, h2, h3, p, ul {
     margin: 0;
@@ -19,7 +25,7 @@ body {
 
 /* Header */
 header {
-    background: #3399FF;
+    background: #ffffff;
     color: #fff;
     padding: 1rem 0;
     position: sticky;
@@ -33,8 +39,17 @@ header .container {
     align-items: center;
 }
 
-header .logo {
-    font-size: 1.8rem;
+/* Estilo para a Logo no Header */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* ESTA LINHA REMOVE O SUBLINHADO */
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7)); /* LINHA ADICIONADA */
 }
 
 header nav ul {
@@ -45,7 +60,7 @@ header nav ul li {
     margin-left: 20px;
 }
 header nav a {
-    color: #fff;
+    color: #19a5d4;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
@@ -53,7 +68,7 @@ header nav a {
     transition: background-color 0.3s;
 }
 header nav a:hover {
-    background-color: #66B2FF;
+    background-color: #02acee;
 }
 
 /* Seção Hero (Banner Principal) - ATUALIZADO PARA VÍDEO */
@@ -66,7 +81,7 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #005f73; /* Cor de fundo caso o vídeo não carregue */
+    background-color: #02acee; /* Cor de fundo caso o vídeo não carregue */
 }
 
 /* ESTILO PARA O VÍDEO DE FUNDO */
@@ -93,14 +108,23 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 90, 150, 0.3); /* Overlay para dar contraste */
+    background-color: rgba(52, 143, 204, 0.3); /* Overlay para dar contraste */
     z-index: 2; /* Overlay fica entre o vídeo e o conteúdo */
 }
 
 .hero h2 {
-    font-size: 3.5rem;
+    font-size: 4rem; /* Tamanho do título principal "AP Motobombas" */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
+    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+}
+
+.hero h2 .slogan {
+    font-family: 'Autography', cursive; /* APLICA A NOVA FONTE! */
+    display: block; /* Faz o slogan pular para a linha de baixo */
+    font-size: 3rem; /* Tamanho da fonte do slogan */
+    font-weight: normal; /* Fontes cursivas geralmente não usam negrito */
+    margin-top: 10px;
 }
 
 .hero p {
@@ -162,7 +186,7 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 .card-peca {
-    background: #e9ecef;
+    background: #19a5d4;
     padding: 20px;
     border-radius: 5px;
 }
@@ -173,7 +197,7 @@ header nav a:hover {
     text-align: left;
 }
 .vaga-item {
-    background: #fff;
+    background: #19a5d4;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -226,8 +250,8 @@ header nav a:hover {
 
 /* Footer, WhatsApp, Forms Button */
 footer {
-    background: #333;
-    color: #fff;
+    background: #19a5d4;
+    color: #ffff;
     text-align: center;
     padding: 20px 0;
 }
@@ -255,7 +279,7 @@ footer {
 .btn-forms {
     display: inline-flex;
     align-items: center;
-    background: #016d88;
+    background: #02acee;
     color: #fff;
     padding: 12px 25px;
     text-decoration: none;
@@ -265,9 +289,60 @@ footer {
     transition: background-color 0.3s;
 }
 .btn-forms:hover {
-    background: #E65C00;
+    background: #19a5d4;
 }
 .btn-forms .fas {
     margin-right: 10px;
     font-size: 1.2rem;
+}
+/* --- Estilo para o Botão de Contato WhatsApp --- */
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Cor oficial do WhatsApp */
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: 600; /* Deixa a fonte um pouco mais forte */
+    font-size: 1rem;
+    margin-top: 20px; /* Espaçamento acima do botão */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DAA53; /* Cor um pouco mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levantar" o botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o ícone dentro do botão */
+.btn-whatsapp .fab {
+    font-size: 1.2rem;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+/* --- Estilos para o Texto ao lado da Logo --- */
+
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Coloca um texto sobre o outro */
+    margin-left: 12px; /* Espaço entre a imagem e o texto */
+    line-height: 1.2; /* Ajusta a altura da linha para os textos ficarem mais juntos */
+    
+}
+
+.brand-name {
+    font-size: 1.4rem; /* Tamanho do nome principal */
+    font-weight: 700; /* Negrito */
+    color: #19a5d4; /* Um azul escuro para contrastar com o fundo branco */
+}
+
+.brand-tagline {
+    font-size: 0.9rem; /* Tamanho menor para o slogan */
+    font-weight: 500;
+    color: #DAA520; /* Cor dourada (GoldenRod) */
 }
