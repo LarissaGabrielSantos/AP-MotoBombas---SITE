@@ -380,3 +380,36 @@ footer {
     margin-right: 10px;
 }
 
+/* --- Efeito Typewriter (Máquina de Escrever) --- */
+
+.typewriter {
+    border-right: 4px solid white; /* Cria o cursor piscando */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        blinking-cursor .75s step-end infinite;
+}
+
+/* Animação do cursor piscando */
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+/* Esconde o slogan no início */
+.hero h2 .slogan {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.5s; /* Pequeno atraso antes de aparecer */
+}
+
+/* Classe que o JavaScript vai adicionar para mostrar o slogan */
+.hero h2 .slogan.visible {
+    opacity: 1;
+}
+
+/* Classe que o JavaScript vai adicionar para parar o cursor de piscar */
+.typing-done .typewriter {
+    border-right: 4px solid transparent; /* Deixa o cursor transparente */
+    animation: none; /* Para a animação */
+}

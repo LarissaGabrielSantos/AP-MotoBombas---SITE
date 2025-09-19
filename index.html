@@ -42,11 +42,12 @@
             </video>
             <div class="container">
                 <h2>
-                    AP MotoBombas
+                    <span class="typewriter" data-text="AP MotoBombas"></span>
                     <span class="slogan">Você merece o melhor</span>
                 </h2>
+                <br>
                 <p>Especialistas em manutenção de motobombas e venda das melhores peças do mercado.</p>
-                <a href="servicos.html" class="btn">Conheça Nossos Serviços</a>
+                <a href="servicos.html" class="btn">Clique aqui e conheça nossos serviços</a>
             </div>
         </section>
 
@@ -63,6 +64,43 @@
                 } else { // ...ou ao voltar para o topo
                     header.classList.add('transparent-header');
                 }
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                const typewriterElement = document.querySelector('.typewriter');
+                const sloganElement = document.querySelector('.slogan');
+                const h2Element = typewriterElement.parentElement;
+                const text = typewriterElement.getAttribute('data-text');
+
+                // Função principal que controla a animação
+                function startTypewriterAnimation() {
+                    // 1. Reseta o estado inicial
+                    typewriterElement.innerHTML = '';
+                    sloganElement.classList.remove('visible');
+                    h2Element.classList.remove('typing-done');
+                    let index = 0;
+
+                    // 2. Função interna que escreve o texto letra por letra
+                    function type() {
+                        if (index < text.length) {
+                            typewriterElement.innerHTML += text.charAt(index);
+                            index++;
+                            setTimeout(type, 150); // Velocidade da digitação
+                        } else {
+                            // 3. Quando a digitação termina, mostra o slogan
+                            h2Element.classList.add('typing-done'); // Para o cursor de piscar
+                            sloganElement.classList.add('visible'); // Mostra o slogan
+
+                            // 4. Agenda a próxima animação para daqui a 5 segundos
+                            setTimeout(startTypewriterAnimation, 5000); // 5000ms = 5 segundos
+                        }
+                    }
+
+                    // Inicia a função de escrever
+                    type();
+                }
+
+                // Inicia o ciclo da animação pela primeira vez
+                startTypewriterAnimation();
             });
         </script>
 
