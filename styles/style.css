@@ -242,6 +242,7 @@ header.transparent-header nav a:hover {
 }
 .card-peca {
     background: #19a5d4;
+    color:#ffff;
     padding: 20px;
     border-radius: 5px;
 }
@@ -412,4 +413,51 @@ footer {
 .typing-done .typewriter {
     border-right: 4px solid transparent; /* Deixa o cursor transparente */
     animation: none; /* Para a animação */
+}
+
+/* --- Estilos para a Galeria com Carrossel Swiper --- */
+
+.gallery-section {
+    padding-bottom: 0; /* Removemos o padding de baixo para o carrossel colar no footer se necessário */
+}
+
+.swiper-container {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 0 40px 0; /* Espaçamento abaixo do carrossel */
+}
+
+.swiper {
+    width: 90%; /* O carrossel ocupa 90% da largura da página */
+    max-width: 1200px; /* Largura máxima */
+    height: 600px; /* Altura fixa do carrossel, ajuste se precisar */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir todo o slide sem distorcer */
+}
+
+/* Personaliza as cores das setas e bolinhas para combinar com seu site */
+:root {
+    --swiper-navigation-color: #ffffff;
+    --swiper-pagination-color: #ffffff;
+    --swiper-navigation-size: 30px; /* Tamanho das setas */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
