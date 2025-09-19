@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Motobombas - Manutenção e Peças para Piscinas</title>
+    <title>Galeria - AP Motobombas</title>
     <link rel="icon" type="image/png" href="./Assets/img/logo.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -24,24 +27,21 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="pecas.html">Peças</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-
-
         <section id="servicos" class="section">
             <div class="container">
                 <br>
                 <br>
-                <h2>Nossos Serviços</h2>
+                <h2>Catálogo de Serviços</h2>
                 <br>
                 <div class="grid">
                     <div class="card">
@@ -66,15 +66,40 @@
             </div>
         </section>
 
-       
 
+
+        <section class="section gallery-section">
+            <div class="container">
+                <br>
+                <br>
+                <p>Confira alguns de nossos trabalhos e a qualidade que entregamos.</p>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto1.jpg" alt="Serviço realizado 1">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto2.jpg" alt="Serviço realizado 2">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto3.jpg" alt="Serviço realizado 3">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto4.jpg" alt="Serviço realizado 4">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto5.jpg" alt="Serviço realizado 5">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto6.jpg" alt="Serviço realizado 6">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <footer>
         <div class="container">
             <p>&copy; 2025 AP Motobombas. Todos os direitos reservados.</p>
@@ -84,6 +109,23 @@
     <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="whatsapp-button" target="blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true, // Permite que o carrossel volte ao início
+            grabCursor: true, // Mostra a mãozinha ao passar o mouse
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true, // Permite clicar nas bolinhas para navegar
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
 </body>
 

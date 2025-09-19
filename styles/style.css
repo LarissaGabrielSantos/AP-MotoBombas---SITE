@@ -247,17 +247,17 @@ header.transparent-header nav a:hover {
     border-radius: 5px;
 }
 
-/* Estilos para o Acordeão de Vagas */
+/* Estilos para Vagas */
 .acordeon-vagas {
     margin-top: 40px;
     text-align: left;
 }
 .vaga-item {
-    background: #19a5d4;
+    background: #8cd8f1;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(235, 231, 231, 0.05);
     overflow: hidden;
 }
 .vaga-header {
@@ -278,7 +278,7 @@ header.transparent-header nav a:hover {
 }
 .vaga-header span i {
     font-size: 1.1rem;
-    color: #3399FF;
+    color: #abc8e6;
     transition: transform 0.3s ease;
 }
 .vaga-header.active span i {
@@ -296,7 +296,7 @@ header.transparent-header nav a:hover {
 .vaga-detalhes h4 {
     margin-top: 20px;
     margin-bottom: 10px;
-    border-left: 4px solid #4DA6FF;
+    border-left: 4px solid #9ec3e7;
     padding-left: 10px;
 }
 .vaga-detalhes ul {
