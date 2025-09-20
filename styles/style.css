@@ -4,16 +4,26 @@
 }
 
 /* Reset Básico e Fontes */
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.titulo{
-    color:#FFF
+.titulo {
+    color: #FFF
 }
+
+.paragraphy{
+    color: #FFF;
+}
+
 
 body {
     line-height: 1.6;
@@ -29,14 +39,17 @@ body {
 
 /* Header com Efeito Transparente */
 header {
-    background: #ffffff; /* Fundo sólido padrão */
+    background: #ffffff;
+    /* Fundo sólido padrão */
     padding: 1rem 0;
-    position: fixed; /* MUDAMOS PARA 'fixed' */
+    position: fixed;
+    /* MUDAMOS PARA 'fixed' */
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: background-color 0.4s ease, color 0.4s ease; /* Animação suave */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    /* Animação suave */
 }
 
 /* ESTADO TRANSPARENTE (QUANDO NO TOPO) */
@@ -72,7 +85,7 @@ header.transparent-header .brand-tagline {
 
 /* Quando o header é transparente, a logo ganha um brilho para destacar no vídeo */
 header.transparent-header .logo-img {
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
 
@@ -87,14 +100,16 @@ header.transparent-header .logo-img {
 .brand-name {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #003B4E; /* Cor padrão (quando o header é branco) */
+    color: #003B4E;
+    /* Cor padrão (quando o header é branco) */
     transition: color 0.4s ease;
 }
 
 .brand-tagline {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #DAA520; /* Cor dourada (permanece a mesma) */
+    color: #DAA520;
+    /* Cor dourada (permanece a mesma) */
     transition: color 0.4s ease;
 }
 
@@ -104,14 +119,18 @@ header nav ul {
     list-style: none;
     display: flex;
 }
+
 header nav ul li {
     margin-left: 20px;
 }
+
 header nav a {
-    color: #19a5d4; /* Cor padrão (quando o header é branco) */
+    color: #19a5d4;
+    /* Cor padrão (quando o header é branco) */
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 600; /* Aumentei o peso para melhor leitura */
+    font-weight: 600;
+    /* Aumentei o peso para melhor leitura */
     padding: 5px 10px;
     border-radius: 5px;
     transition: color 0.4s ease;
@@ -120,7 +139,8 @@ header nav a {
 /* Links quando o header é transparente ficam brancos */
 header.transparent-header nav a {
     color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para legibilidade sobre o vídeo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Sombra para legibilidade sobre o vídeo */
 }
 
 header nav a:hover {
@@ -128,7 +148,8 @@ header nav a:hover {
 }
 
 header.transparent-header nav a:hover {
-    color: #dddddd; /* Efeito hover para o estado transparente */
+    color: #dddddd;
+    /* Efeito hover para o estado transparente */
 }
 
 
@@ -143,7 +164,8 @@ header.transparent-header nav a:hover {
     justify-content: center;
     align-items: center;
     background-color: #02acee;
-    padding-top: 92px; /* Adiciona um espaçamento no topo do banner para não ficar escondido atrás do header */
+    padding-top: 92px;
+    /* Adiciona um espaçamento no topo do banner para não ficar escondido atrás do header */
 }
 
 #hero-video {
@@ -202,7 +224,7 @@ header.transparent-header nav a:hover {
     border-radius: 5px;
     font-size: 1.1rem;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
@@ -214,40 +236,48 @@ header.transparent-header nav a:hover {
     padding: 60px 0;
     text-align: center;
 }
+
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
+
 .bg-light {
     background-color: #f4f4f4;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
 .card {
     background: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
+
 .card:hover {
     transform: translateY(-10px);
 }
+
 .card .icon {
     font-size: 3rem;
     color: #3399FF;
     margin-bottom: 20px;
 }
+
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
 .card-peca {
     background: #19a5d4;
-    color:#ffff;
+    color: #ffff;
     padding: 20px;
     border-radius: 5px;
 }
@@ -257,14 +287,16 @@ header.transparent-header nav a:hover {
     margin-top: 40px;
     text-align: left;
 }
+
 .vaga-item {
-    background: #8cd8f1;
+    background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(235, 231, 231, 0.05);
     overflow: hidden;
 }
+
 .vaga-header {
     padding: 20px 25px;
     cursor: pointer;
@@ -273,37 +305,46 @@ header.transparent-header nav a:hover {
     align-items: center;
     transition: background-color 0.3s ease;
 }
+
 .vaga-header:hover {
     background-color: #f9f9f9;
 }
+
 .vaga-header h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #0ca6ee;
 }
+
 .vaga-header span i {
     font-size: 1.1rem;
-    color: #abc8e6;
+    color: #2575ca;
     transition: transform 0.3s ease;
 }
+
 .vaga-header.active span i {
     transform: rotate(45deg);
 }
+
 .vaga-detalhes {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
     padding: 0 25px;
+    color: #000000;
 }
-.vaga-header.active + .vaga-detalhes {
+
+.vaga-header.active+.vaga-detalhes {
     padding: 10px 25px 30px 25px;
 }
+
 .vaga-detalhes h4 {
     margin-top: 20px;
     margin-bottom: 10px;
     border-left: 4px solid #9ec3e7;
     padding-left: 10px;
 }
+
 .vaga-detalhes ul {
     list-style-position: inside;
     margin-left: 10px;
@@ -316,6 +357,7 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
 .whatsapp-button {
     position: fixed;
     bottom: 30px;
@@ -329,14 +371,16 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     transition: transform 0.3s;
     z-index: 100;
 }
+
 .whatsapp-button:hover {
     transform: scale(1.1);
 }
+
 .btn-forms {
     display: inline-flex;
     align-items: center;
@@ -349,9 +393,11 @@ footer {
     margin-top: 15px;
     transition: background-color 0.3s;
 }
+
 .btn-forms:hover {
     background: #19a5d4;
 }
+
 .btn-forms .fas {
     margin-right: 10px;
     font-size: 1.2rem;
@@ -389,24 +435,33 @@ footer {
 /* --- Efeito Typewriter (Máquina de Escrever) --- */
 
 .typewriter {
-    border-right: 4px solid white; /* Cria o cursor piscando */
+    border-right: 4px solid white;
+    /* Cria o cursor piscando */
     white-space: nowrap;
     overflow: hidden;
-    animation: 
+    animation:
         blinking-cursor .75s step-end infinite;
 }
 
 /* Animação do cursor piscando */
 @keyframes blinking-cursor {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
 }
 
 /* Esconde o slogan no início */
 .hero h2 .slogan {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    transition-delay: 0.5s; /* Pequeno atraso antes de aparecer */
+    transition-delay: 0.5s;
+    /* Pequeno atraso antes de aparecer */
 }
 
 /* Classe que o JavaScript vai adicionar para mostrar o slogan */
@@ -416,28 +471,35 @@ footer {
 
 /* Classe que o JavaScript vai adicionar para parar o cursor de piscar */
 .typing-done .typewriter {
-    border-right: 4px solid transparent; /* Deixa o cursor transparente */
-    animation: none; /* Para a animação */
+    border-right: 4px solid transparent;
+    /* Deixa o cursor transparente */
+    animation: none;
+    /* Para a animação */
 }
 
 /* --- Estilos para a Galeria com Carrossel Swiper --- */
 
 .gallery-section {
-    padding-bottom: 0; /* Removemos o padding de baixo para o carrossel colar no footer se necessário */
+    padding-bottom: 0;
+    /* Removemos o padding de baixo para o carrossel colar no footer se necessário */
 }
 
 .swiper-container {
     width: 100%;
     margin-top: 40px;
-    padding: 0 0 40px 0; /* Espaçamento abaixo do carrossel */
+    padding: 0 0 40px 0;
+    /* Espaçamento abaixo do carrossel */
 }
 
 .swiper {
-    width: 90%; /* O carrossel ocupa 90% da largura da página */
-    max-width: 1200px; /* Largura máxima */
-    height: 600px; /* Altura fixa do carrossel, ajuste se precisar */
+    width: 90%;
+    /* O carrossel ocupa 90% da largura da página */
+    max-width: 1200px;
+    /* Largura máxima */
+    height: 600px;
+    /* Altura fixa do carrossel, ajuste se precisar */
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .swiper-slide {
@@ -453,16 +515,19 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem cobrir todo o slide sem distorcer */
+    object-fit: cover;
+    /* Faz a imagem cobrir todo o slide sem distorcer */
 }
 
 /* Personaliza as cores das setas e bolinhas para combinar com seu site */
 :root {
     --swiper-navigation-color: #ffffff;
     --swiper-pagination-color: #ffffff;
-    --swiper-navigation-size: 30px; /* Tamanho das setas */
+    --swiper-navigation-size: 30px;
+    /* Tamanho das setas */
 }
 
-.swiper-button-next, .swiper-button-prev {
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+.swiper-button-next,
+.swiper-button-prev {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
