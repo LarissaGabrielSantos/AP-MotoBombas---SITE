@@ -20,7 +20,7 @@ ul {
     color: #FFF
 }
 
-.paragraphy{
+.paragraphy {
     color: #FFF;
 }
 
@@ -530,4 +530,65 @@ footer {
 .swiper-button-next,
 .swiper-button-prev {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Estilos para a Página de Contato --- */
+
+.contato-section .container {
+    max-width: 800px;
+    /* Deixa a área do formulário mais centralizada e legível */
+}
+
+.contact-form {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #19a5d4;
+    /* Destaca o campo ao clicar */
+    box-shadow: 0 0 5px rgba(25, 165, 212, 0.5);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #19a5d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0077b6;
 }
