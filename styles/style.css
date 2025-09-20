@@ -11,9 +11,14 @@ body, h1, h2, h3, p, ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.titulo{
+    color:#FFF
+}
+
 body {
     line-height: 1.6;
     color: #333;
+    background-color: #2e75b3
 }
 
 .container {
