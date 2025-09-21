@@ -152,6 +152,12 @@ header.transparent-header nav a:hover {
     /* Efeito hover para o estado transparente */
 }
 
+/* --- ADICIONADO --- */
+/* Esconde o botão hambúrguer no PC por padrão */
+.hamburger-menu {
+    display: none;
+}
+
 
 /* Seção Hero (Banner Principal) */
 .hero {
@@ -591,4 +597,115 @@ footer {
 
 .btn-submit:hover {
     background-color: #0077b6;
+}
+
+
+/* ========================================= */
+/* --- ESTILOS DE RESPONSIVIDADE --- */
+/* ========================================= */
+
+@media (max-width: 850px) {
+    /* Ponto de quebra ajustado */
+
+    /* --- AJUSTES GERAIS --- */
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* --- CABEÇALHO E MENU HAMBÚRGUER --- */
+
+    /* --- ADICIONADO --- */
+    /* Esconde o menu de links da barra do topo no celular */
+    header .main-nav {
+        display: none;
+    }
+    
+    /* --- ADICIONADO --- */
+    /* Faz o menu aparecer quando estiver ativo (clicado) */
+    header .main-nav.active {
+        display: flex; /* Sobrescreve o 'display: none' para que o menu apareça */
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: #19a5d4;
+        cursor: pointer;
+        z-index: 1001;
+        /* Garante que fique acima do menu */
+    }
+
+    .home-page header.transparent-header .hamburger-menu {
+        color: #ffffff;
+    }
+
+    /* --- EDITADO --- */
+    /* Esta regra agora descreve apenas o painel lateral, que é ativado pelo JS */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Começa escondido */
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease-in-out;
+    }
+
+    .main-nav.active {
+        right: 0;
+        /* Mostra o menu */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    /* --- LAYOUTS EM GRADE --- */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste no texto da logo em telas menores */
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.8rem;
+    }
+
+    /* Ajustes de texto na seção Hero */
+    .hero h2 {
+        font-size: 2.5rem;
+        /* Diminui "AP MotoBombas" */
+    }
+
+    .hero h2 .slogan {
+        font-size: 2rem;
+        /* Diminui o slogan */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        /* Diminui o parágrafo */
+    }
 }
