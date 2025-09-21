@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Autography';
-    src: url('./Assets/fonts/Autography.otf') format('opentype');
+    src: url('../Assets/fonts/Autography.otf') format('opentype');
 }
 
 /* Reset Básico e Fontes */
@@ -30,6 +30,8 @@ body {
     color: #333;
     background-color: #2e75b3
 }
+
+
 
 .container {
     width: 80%;
@@ -160,18 +162,20 @@ header.transparent-header nav a:hover {
 
 
 /* Seção Hero (Banner Principal) */
+/* Encontre esta regra no seu CSS */
 .hero {
     position: relative;
     color: #fff;
     text-align: center;
     overflow: hidden;
-    height: 100vh;
+    /* MUDE A LINHA ABAIXO */
+    min-height: 100vh;
+    /* ANTES ESTAVA 'height: 100vh;' */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #02acee;
     padding-top: 92px;
-    /* Adiciona um espaçamento no topo do banner para não ficar escondido atrás do header */
 }
 
 #hero-video {
@@ -623,11 +627,12 @@ footer {
     header .main-nav {
         display: none;
     }
-    
+
     /* --- ADICIONADO --- */
     /* Faz o menu aparecer quando estiver ativo (clicado) */
     header .main-nav.active {
-        display: flex; /* Sobrescreve o 'display: none' para que o menu apareça */
+        display: flex;
+        /* Sobrescreve o 'display: none' para que o menu apareça */
     }
 
     .hamburger-menu {
@@ -708,4 +713,31 @@ footer {
         font-size: 1rem;
         /* Diminui o parágrafo */
     }
+
+    /* Ajuste para a página 'Sobre' com vídeo de fundo */
+    #banner-piscina .container {
+        padding-top: 120px;
+        /* Aumenta o espaço do topo para o conteúdo não ficar atrás do header */
+        padding-bottom: 60px;
+        max-width: 900px;
+        /* Limita a largura do texto para melhor leitura */
+    }
+
+    #banner-piscina .card-peca {
+        padding: 30px;
+        border-radius: 10px;
+        /* Opcional: Adiciona um fundo semi-transparente para o texto ficar mais legível */
+        background-color: rgba(0, 48, 73, 0.6);
+        backdrop-filter: blur(5px);
+        /* Efeito de desfoque no fundo do card */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #banner-piscina .paragraphy {
+        text-align: justify;
+        /* Melhora a aparência de blocos de texto longos */
+        line-height: 1.8;
+    }
+
+
 }
