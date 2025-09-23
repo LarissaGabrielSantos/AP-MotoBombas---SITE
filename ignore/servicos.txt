@@ -40,44 +40,13 @@
     </header>
 
     <main>
-
-
-
-
-        <section class="section gallery-section">
+        <section id="servicos" class="section">
             <div class="container">
                 <br>
                 <br>
                 <br>
                 <h2 class="titulo">Catálogo de Serviços</h2>
-            </div>
-
-            <div class="swiper-container">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./Assets/img/img_teste.jpg" alt="Serviço realizado 1">
-                        </div>
-                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto2.jpg" alt="Serviço realizado 2">
-                        </div>
-                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto3.jpg" alt="Serviço realizado 3">
-                        </div>
-                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto4.jpg" alt="Serviço realizado 4">
-                        </div>
-                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto5.jpg" alt="Serviço realizado 5">
-                        </div>
-                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto6.jpg" alt="Serviço realizado 6">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="servicos" class="section">
-            <div class="container">
+                <br>
                 <div class="grid">
                     <div class="card">
                         <i class="fas fa-tools icon"></i>
@@ -120,6 +89,37 @@
         </section>
 
 
+
+        <section class="section gallery-section">
+            <div class="container">
+                <br>
+                <br>
+                <h2 class="titulo">Confira alguns de nossos trabalhos e a qualidade que entregamos.</h2>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./Assets/img/img_teste.jpg" alt="Serviço realizado 1">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto2.jpg" alt="Serviço realizado 2">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto3.jpg" alt="Serviço realizado 3">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto4.jpg" alt="Serviço realizado 4">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto5.jpg" alt="Serviço realizado 5">
+                        </div>
+                        <div class="swiper-slide"><img src="./Assets/img/galeria/foto6.jpg" alt="Serviço realizado 6">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
