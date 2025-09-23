@@ -42,19 +42,15 @@ body {
 /* Header com Efeito Transparente */
 header {
     background: #ffffff;
-    /* Fundo sólido padrão */
     padding: 1rem 0;
     position: fixed;
-    /* MUDAMOS PARA 'fixed' */
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.4s ease, color 0.4s ease;
-    /* Animação suave */
 }
 
-/* ESTADO TRANSPARENTE (QUANDO NO TOPO) */
 header.transparent-header {
     background: transparent;
     box-shadow: none;
@@ -66,7 +62,6 @@ header .container {
     align-items: center;
 }
 
-/* Estilo para a Logo no Header */
 .logo-container {
     display: flex;
     align-items: center;
@@ -79,19 +74,16 @@ header .container {
     transition: filter 0.4s ease;
 }
 
-/* Quando o header é transparente, o texto da logo fica branco */
 header.transparent-header .brand-name,
 header.transparent-header .brand-tagline {
     color: #ffffff;
 }
 
-/* Quando o header é transparente, a logo ganha um brilho para destacar no vídeo */
 header.transparent-header .logo-img {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
 
-/* Estilos para o Texto ao lado da Logo */
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -103,7 +95,6 @@ header.transparent-header .logo-img {
     font-size: 1.4rem;
     font-weight: 700;
     color: #003B4E;
-    /* Cor padrão (quando o header é branco) */
     transition: color 0.4s ease;
 }
 
@@ -111,12 +102,9 @@ header.transparent-header .logo-img {
     font-size: 0.9rem;
     font-weight: 500;
     color: #DAA520;
-    /* Cor dourada (permanece a mesma) */
     transition: color 0.4s ease;
 }
 
-
-/* Links de Navegação */
 header nav ul {
     list-style: none;
     display: flex;
@@ -128,21 +116,17 @@ header nav ul li {
 
 header nav a {
     color: #19a5d4;
-    /* Cor padrão (quando o header é branco) */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    /* Aumentei o peso para melhor leitura */
     padding: 5px 10px;
     border-radius: 5px;
     transition: color 0.4s ease;
 }
 
-/* Links quando o header é transparente ficam brancos */
 header.transparent-header nav a {
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    /* Sombra para legibilidade sobre o vídeo */
 }
 
 header nav a:hover {
@@ -151,26 +135,20 @@ header nav a:hover {
 
 header.transparent-header nav a:hover {
     color: #dddddd;
-    /* Efeito hover para o estado transparente */
 }
 
-/* --- ADICIONADO --- */
-/* Esconde o botão hambúrguer no PC por padrão */
 .hamburger-menu {
     display: none;
 }
 
 
 /* Seção Hero (Banner Principal) */
-/* Encontre esta regra no seu CSS */
 .hero {
     position: relative;
     color: #fff;
     text-align: center;
     overflow: hidden;
-    /* MUDE A LINHA ABAIXO */
     min-height: 100vh;
-    /* ANTES ESTAVA 'height: 100vh;' */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,19 +234,27 @@ header.transparent-header nav a:hover {
     background-color: #f4f4f4;
 }
 
+/* ========================================= */
+/* --- INÍCIO DA ÁREA MODIFICADA --- */
+/* ========================================= */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr); /* MODIFICADO para 4 colunas */
+    gap: 20px; /* MODIFICADO: Espaçamento reduzido para melhor ajuste */
 }
 
 .card {
     background: #fff;
-    padding: 30px;
+    padding: 25px; /* MODIFICADO: Padding ajustado */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    display: flex; /* Adicionado para alinhar o conteúdo verticalmente */
+    flex-direction: column; /* Adicionado para alinhar o conteúdo verticalmente */
 }
+/* ========================================= */
+/* --- FIM DA ÁREA MODIFICADA --- */
+/* ========================================= */
 
 .card:hover {
     transform: translateY(-10px);
@@ -281,7 +267,7 @@ header.transparent-header nav a:hover {
 }
 
 .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* MODIFICADO: Fonte um pouco menor para caber melhor */
     margin-bottom: 10px;
 }
 
@@ -439,14 +425,12 @@ header.transparent-header nav a:hover {
 
 .typewriter {
     border-right: 4px solid white;
-    /* Cria o cursor piscando */
     white-space: nowrap;
     overflow: hidden;
     animation:
         blinking-cursor .75s step-end infinite;
 }
 
-/* Animação do cursor piscando */
 @keyframes blinking-cursor {
 
     from,
@@ -459,48 +443,37 @@ header.transparent-header nav a:hover {
     }
 }
 
-/* Esconde o slogan no início */
 .hero h2 .slogan {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transition-delay: 0.5s;
-    /* Pequeno atraso antes de aparecer */
 }
 
-/* Classe que o JavaScript vai adicionar para mostrar o slogan */
 .hero h2 .slogan.visible {
     opacity: 1;
 }
 
-/* Classe que o JavaScript vai adicionar para parar o cursor de piscar */
 .typing-done .typewriter {
     border-right: 4px solid transparent;
-    /* Deixa o cursor transparente */
     animation: none;
-    /* Para a animação */
 }
 
 /* --- Estilos para a Galeria com Carrossel Swiper --- */
 
 .gallery-section {
     padding-bottom: 0;
-    /* Removemos o padding de baixo para o carrossel colar no footer se necessário */
 }
 
 .swiper-container {
     width: 100%;
     margin-top: 40px;
     padding: 0 0 40px 0;
-    /* Espaçamento abaixo do carrossel */
 }
 
 .swiper {
     width: 90%;
-    /* O carrossel ocupa 90% da largura da página */
     max-width: 1200px;
-    /* Largura máxima */
     height: 600px;
-    /* Altura fixa do carrossel, ajuste se precisar */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -519,15 +492,12 @@ header.transparent-header nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Faz a imagem cobrir todo o slide sem distorcer */
 }
 
-/* Personaliza as cores das setas e bolinhas para combinar com seu site */
 :root {
     --swiper-navigation-color: #ffffff;
     --swiper-pagination-color: #ffffff;
     --swiper-navigation-size: 30px;
-    /* Tamanho das setas */
 }
 
 .swiper-button-next,
@@ -539,7 +509,6 @@ header.transparent-header nav a:hover {
 
 .contato-section .container {
     max-width: 800px;
-    /* Deixa a área do formulário mais centralizada e legível */
 }
 
 .contact-form {
@@ -567,14 +536,12 @@ header.transparent-header nav a:hover {
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-    /* Garante que o padding não aumente a largura */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: #19a5d4;
-    /* Destaca o campo ao clicar */
     box-shadow: 0 0 5px rgba(25, 165, 212, 0.5);
 }
 
@@ -597,17 +564,13 @@ header.transparent-header nav a:hover {
 }
 
 
-/* ========================================= */
-/* --- FOOTER (ESTILO 3 COLUNAS) --- */
-/* ========================================= */
+/* --- FOOTER --- */
 footer {
     background-color: #002333;
-    /* Um azul bem escuro, quase preto */
     color: #e0e0e0;
-    /* Um branco suave para não cansar a vista */
     padding: 60px 0 20px 0;
     line-height: 1.7;
-    text-align: left; /* Garante alinhamento à esquerda nas colunas */
+    text-align: left;
 }
 
 .footer-grid {
@@ -700,8 +663,14 @@ footer {
 /* --- ESTILOS DE RESPONSIVIDADE --- */
 /* ========================================= */
 
+/* ADICIONADO: Responsividade para tablets (2 colunas) */
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 850px) {
-    /* --- AJUSTES GERAIS --- */
     .section h2 {
         font-size: 2rem;
     }
@@ -710,7 +679,6 @@ footer {
         width: 90%;
     }
 
-    /* --- CABEÇALHO E MENU HAMBÚRGUER --- */
     header .main-nav {
         display: none;
     }
@@ -763,12 +731,11 @@ footer {
         text-align: center;
     }
 
-    /* --- LAYOUTS EM GRADE --- */
+    /* MODIFICADO: A regra de 1 coluna para o .grid já estava aqui e continua correta */
     .grid {
         grid-template-columns: 1fr;
     }
 
-    /* --- AJUSTES NA LOGO E HERO --- */
     .brand-name {
         font-size: 1.2rem;
     }
@@ -789,7 +756,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* --- AJUSTES PÁGINA 'SOBRE' --- */
     #banner-piscina .container {
         padding-top: 120px;
         padding-bottom: 60px;
@@ -809,7 +775,6 @@ footer {
         line-height: 1.8;
     }
 
-    /* --- RESPONSIVIDADE DO FOOTER --- */
     .footer-grid {
         grid-template-columns: 1fr;
     }
@@ -835,10 +800,11 @@ footer {
 /* Cards de Produtos */
 .grid-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Altere o valor mínimo aqui */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 40px;
-    padding: 0 15px; /* Adiciona um padding para espaçamento nas laterais */
+    padding: 0 15px;
 }
 
 .card-produto {
@@ -849,7 +815,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    height: 100%;
 }
 
 .card-produto:hover {
@@ -859,15 +825,16 @@ footer {
 
 .produto-img {
     width: 100%;
-    height: 200px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    /* Altere a altura aqui */
+    height: 350px;
+    object-fit: cover;
 }
 
 .produto-conteudo {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    flex-grow: 1;
 }
 
 .produto-titulo {
@@ -882,7 +849,7 @@ footer {
     color: #555;
     line-height: 1.5;
     margin-bottom: 20px;
-    flex-grow: 1; /* Faz a descrição ocupar o espaço restante */
+    flex-grow: 1;
 }
 
 .btn-detalhes {
@@ -901,7 +868,7 @@ footer {
     background-color: #002244;
 }
 
-/* Garante que o container tenha um espaço interno */
 .section {
     padding: 60px 0;
 }
+

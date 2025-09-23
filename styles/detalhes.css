@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Autography';
+    src: url('../Assets/fonts/Autography.otf') format('opentype');
+}
+
+/* ========================================= */
+/* --- ESTILOS GERAIS E RESET --- */
+/* ========================================= */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #2e75b3;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* ========================================= */
+/* --- HEADER (CABEÇALHO) --- */
+/* ========================================= */
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #003B4E;
+}
+
+.brand-tagline {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #DAA520;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #19a5d4;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.4s ease;
+}
+
+header nav a:hover {
+    color: #005f73;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* ========================================= */
+/* --- PÁGINA DE DETALHES DO PRODUTO --- */
+/* ========================================= */
+.product-details {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.product-details-container {
+    display: flex;
+    align-items: flex-start; /* alinhado pelo topo */
+    gap: 40px;
+    width: 100%;
+}
+
+.product-image-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* imagem em cima, título embaixo */
+    align-items: center;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.product-specs {
+    flex: 1;
+    background-color: rgba(0, 35, 51, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-specs h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #19a5d4;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.product-specs ul {
+    list-style: none;
+}
+
+.product-specs li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-specs li:last-child {
+    border-bottom: none;
+}
+
+.product-specs strong {
+    color: #19a5d4;
+}
+
+/* ========================================= */
+/* --- FOOTER (RODAPÉ) --- */
+/* ========================================= */
+footer {
+    background-color: #002333;
+    color: #e0e0e0;
+    padding: 60px 0 20px 0;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #19a5d4;
+}
+
+.footer-column p,
+.footer-contact-list a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer-contact-list a:hover {
+    color: #19a5d4;
+}
+
+.footer-contact-list {
+    list-style: none;
+}
+
+.footer-contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-contact-list i {
+    font-size: 1.1rem;
+    color: #19a5d4;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-icons a:hover {
+    color: #19a5d4;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid #334;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* ========================================= */
+/* --- BOTÃO WHATSAPP --- */
+/* ========================================= */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================= */
+/* --- RESPONSIVIDADE --- */
+/* ========================================= */
+@media (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+
+    /* --- Responsividade do Header --- */
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: #19a5d4;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    header .main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease-in-out;
+    }
+
+    header .main-nav.active {
+        display: flex;
+        right: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    /* --- Responsividade dos Detalhes do Produto --- */
+    .product-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-details {
+        padding-top: 100px;
+    }
+    .product-title {
+        font-size: 1.8rem;
+    }
+    .product-specs h2 {
+        font-size: 1.5rem;
+    }
+
+    /* --- Responsividade do Footer --- */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-contact-list li,
+    .footer-social-icons {
+        justify-content: center;
+    }
+}
