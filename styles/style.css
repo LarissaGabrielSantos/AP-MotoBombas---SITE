@@ -799,13 +799,15 @@ footer {
 }
 /* Cards de Produtos */
 .grid-produtos {
-    display: grid;
-    /* Altere o valor mínimo aqui */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    /* Centraliza os cards */
     gap: 30px;
-    margin-top: 40px;
+    margin: 40px auto 0;
     padding: 0 15px;
+    max-width: 800px;           /* Limite para não “abrir” demais */
 }
+
 
 .card-produto {
     background-color: #fff;
@@ -816,7 +818,11 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-width: 350px;
 }
+
+
+
 
 .card-produto:hover {
     transform: translateY(-5px);
@@ -872,3 +878,6 @@ footer {
     padding: 60px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}

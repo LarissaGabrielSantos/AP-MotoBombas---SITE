@@ -8,13 +8,19 @@
     <link rel="icon" type="image/png" href="./Assets/img/logo.png">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
         <div class="container">
-            <a href="index.html" class="logo-container">
+            <a href="./index.html" class="logo-container">
                 <img src="./Assets/img/logo.png" alt="Logo AP Motobombas" class="logo-img">
                 <div class="logo-text">
                     <span class="brand-name">AP MotoBombas</span>
@@ -26,12 +32,12 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="sobre.html">Sobre nossa história</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./servicos.html">Serviços</a></li>
+                    <li><a href="./produtos.html">Produtos</a></li>
+                    <li><a href="./sobre.html">Sobre nossa história</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./trabalhe-conosco.html">Trabalhe Conosco</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,74 +46,34 @@
     <main>
 
         <section id="pecas" class="section bg-blue">
-            <div class="container">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <br><br><br>
+            <h2 class="titulo">Catálogo de Produtos</h2>
+            <h3 class="titulo">Trabalhamos com um vasto estoque de produtos das melhores marcas.</h3>
+            <h3 class="titulo">Clique nos filtros e confira</h3>
+            <br>
 
-                <h2 class="titulo">Catálogo de Produtos</h2>
-                <p class="paragraphy">Trabalhamos com um vasto estoque de produtos das melhores marcas.</p>
-                <br>
-                <div class="grid">
-                    <div class="card-peca">
-                        <h4>Aquecedores</h4>
-                    </div>
-                    <div class="card-peca">
-                        <h4>Pré-Filtros</h4>
-                    </div>
-                    <div class="card-peca">
-                        <h4>Bombas de calor, água e autoaspirantes</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Conjunto filtrante</h4>
-                    </div>
-                    <div class="card-peca">
-                        <h4>Sauna a vapor</h4>
-                    </div>
-                    <div class="card-peca">
-                        <h4>Gerador de vapor (sauna)</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Trocador de calor para piscinas e SPAS</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Gerador de cloro</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Full inverter</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Aquecedor digital</h4>
-                    </div>
-
-                    <div class="card-peca">
-                        <h4>Boiler de alta e baixa pressão</h4>
-                    </div>
-
-
-                    <div class="card-peca">
-                        <h4>Iluminações subaquáticas</h4>
-                    </div>
-
-
-
-                </div>
-            </div>
+            <!-- Botões de navegação -->
+            <a href="#aquecedores" class="btn-detalhes">Aquecedores</a>
+            <a href="#prefiltros" class="btn-detalhes">Pré-Filtros</a>
+            <a href="#bombas" class="btn-detalhes">Bombas de calor, água e autoaspirantes</a>
+            <a href="#conjunto-filtrante" class="btn-detalhes">Conjunto filtrante</a>
+            <a href="#saunas" class="btn-detalhes">Sauna a vapor</a>
+            <a href="#gerador-vapor" class="btn-detalhes">Gerador de vapor (sauna)</a>
+            <a href="#trocadores" class="btn-detalhes">Trocador de calor</a>
+            <a href="#cloro" class="btn-detalhes">Gerador de cloro</a>
+            <a href="#full-inverter" class="btn-detalhes">Full inverter</a>
+            <a href="#boiler" class="btn-detalhes">Boiler</a>
+            <a href="#iluminacoes" class="btn-detalhes">Iluminações subaquáticas</a>
         </section>
 
-        <section id="produtos-em-destaque" class="section">
+        <!-- ================== SEÇÕES POR CATEGORIA ================== -->
 
+        <section id="aquecedores" class="section">
+            <h3 class="titulo">AQUECEDORES</h3>
             <div class="grid-produtos">
                 <div class="card-produto">
-                    <img src="./Assets/img/Aquecedor sanspray linha 3 funções.png"
-                        alt="Aquecedor sanspray linha 3 funções" class="produto-img">
+                    <img src="./Assets/img/Aquecedor sanspray linha 3 funções.png" alt="Aquecedor Sanspray"
+                        class="produto-img">
                     <div class="produto-conteudo">
                         <h4 class="produto-titulo">Aquecedor Sanspray Linha 3 Funções</h4>
                         <a href="./detalhes/AquecedorSanspray.html" class="btn-detalhes">Ver Detalhes</a>
@@ -115,193 +81,188 @@
                 </div>
 
                 <div class="card-produto">
-                    <img src="./Assets/img/Aquecedor 3 funções line clean.png" alt="Aquecedor 3 funções Line Clean"
+                    <img src="./Assets/img/Aquecedor 3 funções line clean.png" alt="Aquecedor Line Clean"
                         class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Aquecedor 3 funções Line Clean</h4>
+                        <h4 class="produto-titulo">Aquecedor 3 Funções Line Clean</h4>
                         <a href="./detalhes/AquecedorLineClean.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <img src="./Assets/img/Pré filtro autoescorvante.png" alt="filtro" class="produto-img">
+                    <img src="./Assets/img/Aquecedor digital.png" alt="Aquecedor Digital" class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Pré-Filtro autoescorvante</h4>
-                        <br>
+                        <h4 class="produto-titulo">Aquecedor Digital Line Clean</h4>
+                        <a href="./detalhes/AquecedorDigital.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prefiltros" class="section">
+            <h3 class="titulo">PRÉ-FILTROS</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Pré filtro autoescorvante.png" alt="Pré-Filtro Autoescorvante"
+                        class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Pré-Filtro Autoescorvante</h4>
                         <a href="./detalhes/Pre-Filtro.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section id="bombas" class="section">
+            <h3 class="titulo">BOMBAS</h3>
+            <div class="grid-produtos">
                 <div class="card-produto">
                     <img src="./Assets/img/Bomba de calor.png" alt="Bomba de calor Ortum" class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Bomba de calor Ortum</h4>
-                        <br>
+                        <h4 class="produto-titulo">Bomba de Calor Ortum</h4>
                         <a href="./detalhes/BombaDeCalor.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <img src="./Assets/img/Conjunto filtrante com bomba.png" alt="Conjunto filtrante com bomba"
+                    <img src="./Assets/img/Bomba autoaspirante inox Evvolution Komeco.png" alt="Bomba Autoaspirante"
                         class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Conjunto filtrante com bomba</h4>
-                        <br>
-                        <a href="./detalhes/ConjuntoFiltrante.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Sauna a vapor.png" alt="Sauna a vapor com quadro analógico"
-                        class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Sauna a vapor com quadro analógico</h4>
-                        <br>
-                        <a href="./detalhes/SaunaAVapor.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Sauna Steam.png" alt="Sauna Steam Inox 9KW" class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Sauna Steam Inox</h4>
-                        <br>
-                        <a href="./detalhes/SaunaSteamInox.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Sibrape Ortum.png" alt="trocador de calor Sibrape Ortum S12 - 220V"
-                        class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Trocador de calor (piscinas e SPAS) <br> Sibrape</h4>
-                        <br>
-                        <a href="./detalhes/SibrapeOrtum.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Gerador de cloro.png" alt="Gerador de cloro Aquex Sibrape"
-                        class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Gerador de cloro Aquex</h4>
-                        <br>
-                        <a href="./detalhes/GeradorDeCloro.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Full inverter.png" alt="Full inverter Wi-Fi GDA" class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Full inverter Wi-Fi GDA</h4>
-                        <br>
-                        <a href="./detalhes/FullInverter.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Aquecedor digital.png" alt="Aquecedor Digital Line Clean - 3 Funções"
-                        class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Aquecedor Digital Line Clean - 3 Funções</h4>
-                        <br>
-                        <a href="./detalhes/AquecedorDigital.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Boiler komeco.png" alt="Boiler Baixa Pressão - Inox - Komeco"
-                        class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Boiler Baixa Pressão - Inox - Komeco</h4>
-                        <br>
-                        <a href="./detalhes/BoilerKomeco.html" class="btn-detalhes">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Bomba autoaspirante inox Evvolution Komeco.png"
-                        alt="Bomba Autoaspirante Inox Evvolution Komeco" class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Bomba Autoaspirante Inox Evvolution Komeco</h4>
-                        <br>
+                        <h4 class="produto-titulo">Bomba Autoaspirante Inox</h4>
                         <a href="./detalhes/BombaAutoaspirante.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
 
                 <div class="card-produto">
-                    <img src="./Assets/img/Bomba de agua submersivel komeco.png" alt="Bomba de Água Submersível Komeco"
+                    <img src="./Assets/img/Bomba de agua submersivel komeco.png" alt="Bomba Submersível"
                         class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Bomba de Água Submersível Komeco</h4>
-                        <br>
+                        <h4 class="produto-titulo">Bomba de Água Submersível</h4>
                         <a href="./detalhes/BombaDeAguaSubmersivel.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section id="conjunto-filtrante" class="section">
+            <h3 class="titulo">CONJUNTO FILTRANTE</h3>
+            <div class="grid-produtos">
                 <div class="card-produto">
-                    <img src="./Assets/img/iluminação subaquática.png"
-                        alt="Iluminação Subaquática com fonte e controle remoto" class="produto-img">
-                    <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Iluminação Subaquática com fonte e controle remoto</h4>
-                        <br>
-                        <!--<a href="./detalhes/IluminacaoSubaquatica.html" class="btn-detalhes">Ver Detalhes</a>-->
-                    </div>
-                </div>
-
-                <div class="card-produto">
-                    <img src="./Assets/img/Boiler de alta e baixa pressão.png" alt="Boiler de Alta e Baixa Pressão"
+                    <img src="./Assets/img/Conjunto filtrante com bomba.png" alt="Conjunto Filtrante"
                         class="produto-img">
                     <div class="produto-conteudo">
-                        <h4 class="produto-titulo">Boiler de Alta e Baixa Pressão </h4>
-                        <br>
-                        <!--<a href="./detalhes/BoilerDeAltaEBaixaPressao.html" class="btn-detalhes">Ver Detalhes</a> -->
+                        <h4 class="produto-titulo">Conjunto Filtrante com Bomba</h4>
+                        <a href="./detalhes/ConjuntoFiltrante.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saunas" class="section">
+            <h3 class="titulo">SAUNAS</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Sauna a vapor.png" alt="Sauna a vapor" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Sauna a Vapor Analógica</h4>
+                        <a href="./detalhes/SaunaAVapor.html" class="btn-detalhes">Ver Detalhes</a>
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
+                <div class="card-produto">
+                    <img src="./Assets/img/Sauna Steam.png" alt="Sauna Steam Inox" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Sauna Steam Inox</h4>
+                        <a href="./detalhes/SaunaSteamInox.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="trocadores" class="section">
+            <h3 class="titulo">TROCADORES DE CALOR</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Sibrape Ortum.png" alt="Trocador de Calor" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Trocador de Calor (Piscinas e Spas)</h4>
+                        <a href="./detalhes/SibrapeOrtum.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cloro" class="section">
+            <h3 class="titulo">GERADORES DE CLORO</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Gerador de cloro.png" alt="Gerador de Cloro" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Gerador de Cloro</h4>
+                        <a href="./detalhes/GeradorDeCloro.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="full-inverter" class="section">
+            <h3 class="titulo">FULL INVERTER</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Full inverter.png" alt="Full Inverter" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Full Inverter Wi-Fi</h4>
+                        <a href="./detalhes/FullInverter.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="boiler" class="section">
+            <h3 class="titulo">BOILERS</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/Boiler komeco.png" alt="Boiler Komeco" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Boiler Baixa Pressão - Inox</h4>
+                        <a href="./detalhes/BoilerKomeco.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card-produto">
+                    <img src="./Assets/img/Boiler de alta e baixa pressão.png" alt="Boiler Alta e Baixa"
+                        class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Boiler Alta e Baixa Pressão</h4>
+                        <a href="./detalhes/BoilerDeAltaEBaixaPressao.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="iluminacoes" class="section">
+            <h3 class="titulo">ILUMINAÇÕES SUBAQUÁTICAS</h3>
+            <div class="grid-produtos">
+                <div class="card-produto">
+                    <img src="./Assets/img/iluminação subaquática.png" alt="Iluminação Subaquática" class="produto-img">
+                    <div class="produto-conteudo">
+                        <h4 class="produto-titulo">Led de Iluminação Subaquática com Fonte e Controle</h4>
+                        <a href="./detalhes/IluminacaoSubaquatica.html" class="btn-detalhes">Ver Detalhes</a>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
     <footer>
         <div class="container">
             <div class="footer-grid">
-
                 <div class="footer-column">
                     <h4>Sobre Nós</h4>
                     <p>
                         Especialistas em manutenção, conserto e instalação de motobombas para piscinas e
-                        pressurizadores. Oferecemos um serviço de confiança para garantir o lazer e a segurança da sua
-                        família.
+                        pressurizadores.
                     </p>
                 </div>
 
@@ -319,14 +280,11 @@
                 <div class="footer-column">
                     <h4>Redes Sociais</h4>
                     <div class="footer-social-icons">
-                        <a href="https://www.instagram.com/ap.motobombas?utm_source=ig_web_button_share_sheet&igsh=MTUwOWFibW90cHJ0dA=="
-                            target="_blank" aria-label="Instagram">
+                        <a href="https://www.instagram.com/ap.motobombas" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-
                     </div>
                 </div>
-
             </div>
 
             <div class="footer-bottom">
@@ -340,6 +298,8 @@
     </a>
 
     <script src="./js/menu.js"></script>
+
+
 
 </body>
 
